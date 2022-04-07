@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	useFlickr="false"
+	useThumbDots="false"
+	useFullscreenExpand="false"
+	galleryTitle="galerie"
+
+>
+  <image imageURL="images/IMG_7071-008.jpg"
+	thumbURL="thumbs/IMG_7071-008.jpg"
+	linkURL="images/IMG_7071-008.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Herve Balanke\Dropbox\TA\Photos SAC2015\DAY2\IMG_7071-008.JPG">
+    <title><![CDATA[IMG_7071-008]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_7078-010.jpg"
+	thumbURL="thumbs/IMG_7078-010.jpg"
+	linkURL="images/IMG_7078-010.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Herve Balanke\Dropbox\TA\Photos SAC2015\DAY2\IMG_7078-010.JPG">
+    <title><![CDATA[IMG_7078-010]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_7079-011.jpg"
+	thumbURL="thumbs/IMG_7079-011.jpg"
+	linkURL="images/IMG_7079-011.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Herve Balanke\Dropbox\TA\Photos SAC2015\DAY2\IMG_7079-011.JPG">
+    <title><![CDATA[IMG_7079-011]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_7082-014.jpg"
+	thumbURL="thumbs/IMG_7082-014.jpg"
+	linkURL="images/IMG_7082-014.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Herve Balanke\Dropbox\TA\Photos SAC2015\DAY2\IMG_7082-014.JPG">
+    <title><![CDATA[IMG_7082-014]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_7084-016.jpg"
+	thumbURL="thumbs/IMG_7084-016.jpg"
+	linkURL="images/IMG_7084-016.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Herve Balanke\Dropbox\TA\Photos SAC2015\DAY2\IMG_7084-016.JPG">
+    <title><![CDATA[IMG_7084-016]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_7085-017.jpg"
+	thumbURL="thumbs/IMG_7085-017.jpg"
+	linkURL="images/IMG_7085-017.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Herve Balanke\Dropbox\TA\Photos SAC2015\DAY2\IMG_7085-017.JPG">
+    <title><![CDATA[IMG_7085-017]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_7089-020.jpg"
+	thumbURL="thumbs/IMG_7089-020.jpg"
+	linkURL="images/IMG_7089-020.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Herve Balanke\Dropbox\TA\Photos SAC2015\DAY2\IMG_7089-020.JPG">
+    <title><![CDATA[IMG_7089-020]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_7090-021.jpg"
+	thumbURL="thumbs/IMG_7090-021.jpg"
+	linkURL="images/IMG_7090-021.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Herve Balanke\Dropbox\TA\Photos SAC2015\DAY2\IMG_7090-021.JPG">
+    <title><![CDATA[IMG_7090-021]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

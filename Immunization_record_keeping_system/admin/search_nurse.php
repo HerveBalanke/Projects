@@ -1,0 +1,189 @@
+
+<?php 
+session_start ();
+
+if (!isset($_SESSION["admin"]) || (trim($_SESSION["admin"]=='')))
+{
+header('location:../index.php');
+exit();
+
+}
+?> <?php
+
+try{
+              $cons= new PDO("mysql:host=localhost; dbname=FIIS", 'root');
+            }catch(PDOexception $e){
+              die('ERROR:'.$e->getMessage());
+            }
+
+                $search= $_POST["search"];
+
+                $query=$cons->query("select * from nurse where fname like '$search%';");
+                $count=$query->rowCount();
+                if ($count<=0){
+                  print '  <div class="row">
+          <div class="col-md-4">
+        </div>
+          <div class="col-md-4">
+          <div> No record found for '; print $search; echo' !</div><br/>
+        </div>
+         <div class="col-md-4">
+        </div>
+        </div> <div class="col-md-4"> <h6 class="text-center"> <a href="create_account.php"> Return</a> <br/><br/></h6> </div>
+                  '; 
+                  
+                }elseif($count>0){ ?>
+
+               <!-- <div class="row" id='replace'>
+          <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" id="search" placeholder="Search by firtsname">
+                    <div id='check_search' style="color:red"></div>
+                       
+                    <span class="input-group-addon">
+                        <button type="button" name="submit"  id="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                </div>
+            </div>
+        </div>
+  </div>-->
+
+                     <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center">Result for <?php  print $search;?> </h3> <br/>
+
+          </div>
+          </div>
+          <div class="row" >
+          <div class="col-md-12">
+            <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Telephone</th>
+                  <th>Activate Account</th>
+                  <th>Deactivate Account</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                
+            <?php 
+            
+                for($i=0; $i<$count; $i++){ 
+                $list=$query->fetch();
+            ?>
+          
+                  <tr>
+                  <td><a href="view_staff_details.php?nid=<?php print $list["nid"]; ?>"><?php print $list["fname"]; ?> </a> </td>
+                  <td><a href="view_staff_details.php?nid=<?php print $list["nid"]; ?>"><?php print $list["lname"]; ?> </a> </td>
+                  <td><?php print $list["tel"]; ?> </td>
+                  <td><a href="open_account.php?nid=<?php print $list["nid"]; ?>"><span class="glyphicon glyphicon-user" style="color:green"></span></a></td>
+                  <td><a href="lock_account.php?nid=<?php print $list["nid"]; ?>"><span class="glyphicon glyphicon-remove" style="color:red"></span></a></td>
+                   <td ><a href="edit_staff.php?nid=<?php print $list["nid"]; ?>"><span class="glyphicon glyphicon-edit" style="color:orange"></span></a></td>
+                  <td><a  href="javascript:delete_id(<?php echo $list["nid"]; ?>)"><span class="glyphicon glyphicon-trash" style="color:red"></span></a></td>
+                  </tr>
+                 
+            <?php   
+                  }
+            ?>
+                
+                </tbody>
+                </table>
+
+            </div>
+          </div>
+          </div>
+      
+                <div class="row">
+          <div class="col-md-12">
+            <a href='create_account.php' >View all </a> 
+
+          </div>
+          </div>
+
+            <?php
+                }
+                $cons=Null;
+                ?>
+
+
+               <script type="text/javascript">  
+  
+   $(function() {
+$("#submit").click(function() {
+  var search= $("#search").val();
+
+  if (search.length == 0 ) {
+$('#check_search').html("*Please enter the <strong>Search Criteria</strong>"); // This Segment Displays The Validation Rule For All Fields
+$("#search").focus(); 
+
+//$("#uname").change(function(){ $('#check_both').hide();
+//});
+return false;
+}else{
+ 
+var dataString= "search="+ search;
+//alert(dataString);
+
+/*if(textcontent=='')
+{
+alert("Enter some text..");
+$("#content").focus();
+}{*/
+//$("#flash").show();
+
+//else
+//$("#flash").fadeIn(400).html("<div class='progress'><div class='progress-bar progress-bar-striped active' role='progressbar'aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width:100%'> <strong>Adding</strong></div></div>");
+$.ajax({
+type: "POST",
+url: "search_nurse.php",
+data:dataString,
+cache: true,
+success: function(html){
+//$("#flash").html(html);
+$("#replace").html(html);
+document.getElementById('search').value=' ';
+}  
+});
+//}
+return false;
+}
+});
+});
+      </script> 
+                 <script type="text/javascript">
+    
+$('table.table-hover').each(function() {
+    var currentPage = 0;
+    var numPerPage = 15;
+    var $table = $(this);
+    $table.bind('repaginate', function() {
+        $table.find('tbody tr').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
+    });
+    $table.trigger('repaginate');
+    var numRows = $table.find('tbody tr').length;
+    var numPages = Math.ceil(numRows / numPerPage);
+    var $pager = $('<div class="pager"></div>');
+    for (var page = 0; page < numPages; page++) {
+        $('<span class="page-number"></span>').text(page + 1).bind('click', {
+            newPage: page
+        }, function(event) {
+            currentPage = event.data['newPage'];
+            $table.trigger('repaginate');
+            $(this).addClass('active').siblings().removeClass('active');
+        }).appendTo($pager).addClass('clickable');
+    }
+    $pager.insertAfter($table).find('span.page-number:first').addClass('active');
+});
+          
+  </script> 
+
+

@@ -1,0 +1,102 @@
+body{
+font-family:"trebuchet MS", verdana;
+}
+
+#nv {
+background: rgb(255, 213, 29);
+}
+
+.navbar-default {
+border-color:rgb(130, 0, 31);
+font-weight: bold;
+ font-size: 18px;
+}
+
+#nv .navbar-brand{
+color:green;
+}
+
+#navbar li a{
+color:rgb(130, 0, 31);
+}
+
+#navbar li.active a{
+color:rgb(255, 213, 29);
+}
+
+#navbar li a:hover{
+background-color:rgb(130, 0, 31);
+color: rgb(255, 213, 29);
+}
+
+#dec li a:hover{
+background-color:white;
+color: rgb(255, 213, 29);
+}
+
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      background: rgb(130, 0, 31);
+ }
+
+.jumbotron{
+color: rgb(255, 213, 29);
+background-color: rgb(130, 0, 31);
+border-radius: 0 4 !important;
+height:120px;
+}
+
+.well{
+border-radius: 0 0 !important;
+}
+
+
+#exTab3 .tab-content {
+ color : Black;
+  background-color:white;
+}
+
+.nav-tabs li a{
+ background-color: rgb(130, 0, 31);
+ color : rgb(255, 213, 29);
+}
+
+.nav-tabs li a:hover{
+ background-color: rgb(255, 213, 29);
+ color : rgb(130, 0, 31);
+}
+
+.nav-tabs li.active a,
+.nav-tabs li.focus a{
+ color : rgb(130, 0, 31);
+}
+
+
+.form-inline .form-group{
+margin-left:0;
+margin-right:0;
+padding: 0px 20px 10px 0px !important;
+}
+
+#a, #a_ur{
+width:160px;
+}
+
+#tel, #tel_ur{
+width:200px;
+}
+
+#b{
+width:160px;
+}
+
+#whatsapp{
+width:200px;
+}
+
+
+
+
+
+

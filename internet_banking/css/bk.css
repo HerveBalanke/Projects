@@ -1,0 +1,171 @@
+body{
+height: 1024px;
+width: 768px;
+margin: 0px 298px;
+font-family:"trebuchet MS",georgia,impact,"sans-serif";
+}
+
+header{
+height: 150px;
+width: 768px;
+border: solid 1px rgb(232,228,226);
+border-bottom: none;
+background-image:url("images/1.png");
+background-repeat: no-repeat;
+   
+    -webkit-animation-name: design;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    
+    animation-name: design;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes design {
+    0%{background-image:url("images/1.png");}
+    100%{background-image:url("images/2.png");}
+}
+
+@keyframes design {
+    0%{background-image:url("images/1.png");}
+    100%{background-image:url("images/2.png");}
+}
+
+
+nav ul{
+list-style-type:none;
+}
+nav li{
+display:inline;
+}
+
+a{
+text-decoration:none;
+}
+
+nav{
+width:768px;
+height:25px;
+position:absolute;
+top:125px;
+background-color:rgb(232,228,226);
+font-weight: bold;
+}
+
+.bk{
+position:absolute;
+left:127px;
+width:130px;
+top:3px;
+color: rgb(102,164,229);
+}
+
+.lg{
+position:absolute;
+right:167px;
+width:50px;
+top:3px;
+color: rgb(102,164,229);
+}
+
+section{
+position: absolute;
+top: 150px;
+height: 774px;
+width: 500px;
+border: solid 1px rgb(232,228,226);
+padding:0px 134px;
+}
+
+h1, h5{
+text-align:center;
+}
+
+form{
+width: 460px;
+border: solid 1px rgb(232,228,226);
+padding:0px 40px;
+}
+
+
+.a{
+width:300px;
+position: absolute;
+right: 154px;
+border:solid 1px rgb(232,228,226);
+}
+
+.b{
+position:absolute;
+left:255px;
+border: solid 1px rgb(232,228,226);
+}
+.c{
+position:absolute;
+right:390px;
+border: solid 1px rgb(232,228,226);
+}
+
+.date{
+position:absolute;
+left:310px;
+top:173px;
+}
+
+.radio{
+position:absolute;
+left:318px;
+}
+
+.male{
+position:absolute;
+left:340px;
+}
+
+.female{
+position:absolute;
+left:340px;
+}
+
+
+input{
+text-align: center;
+font-family:"trebuchet MS",georgia,impact,"sans-serif";
+}
+
+input[type="submit"], input[type="reset"]{
+color: rgb(102,164,229);
+}
+
+input[type="text"]:hover,input[type="password"]:hover, input[type="date"]:hover,
+input[type="number"]:hover, input[type="tel"]:hover, input[type="email"]:hover,
+  input[type="reset"]:hover, input[type="submit"]:hover{
+border: solid 1px black;
+}
+
+input[type="text"]:focus,input[type="password"]:focus, input[type="date"]:focus,
+input[type="number"]:focus, input[type="tel"]:focus, input[type="email"]:focus,
+ select:focus, input[type="reset"]:focus, input[type="submit"]:focus{
+outline:ridge 2px black;
+}{
+outline:ridge 2px black;
+}
+
+
+footer{
+position: absolute;
+top: 924px;
+height: 100px;
+width: 768px;
+border: solid 1px rgb(232,228,226);
+border-top: none;
+}

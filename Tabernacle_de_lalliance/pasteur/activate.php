@@ -1,0 +1,11 @@
+<?php
+include_once("../sessions/session_pasteur.php");
+require_once("../setup/connection.php");
+$bid=$_SESSION['bid'];
+$pasteur=$_SESSION['pasteur'];
+$uid=$_POST["uid"];
+$sup_un=$con->query("update utilisateur set desactivate='off' where uid='$uid' and branche='$bid';") or die (print_r($con->errorInfo()));
+if ($sup){
+	print "OK";
+}
+?>

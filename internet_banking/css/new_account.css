@@ -1,0 +1,145 @@
+body{
+height: 1024px;
+width: 768px;
+margin: 0px 298px;
+font-family:"trebuchet MS",georgia,impact,"sans-serif";
+}
+
+header{
+height: 150px;
+width: 768px;
+border: solid 1px rgb(232,228,226);
+border-bottom: none;
+background-image:url("images/2.png");
+background-repeat: no-repeat;
+   
+    -webkit-animation-name: design;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+   
+    animation-name: design;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes design {
+    0%{background-image:url("images/3.png");}
+    100%{background-image:url("images/2.png");}
+}
+
+@keyframes design {
+    0%{background-image:url("images/3.png");}
+    100%{background-image:url("images/2.png");}
+}
+
+nav ul{
+list-style-type:none;
+}
+nav li{
+display:inline;
+}
+
+a{
+text-decoration:none;
+}
+
+nav{
+width:768px;
+height:25px;
+position:absolute;
+top:125px;
+background-color:rgb(232,228,226);
+font-weight: bold;
+}
+
+.bk{
+position:absolute;
+left:127px;
+width:130px;
+top:3px;
+color: rgb(102,164,229);
+}
+
+.lg{
+position:absolute;
+right:167px;
+width:50px;
+top:3px;
+color: rgb(102,164,229);
+}
+
+section{
+position: absolute;
+top: 150px;
+height: 774px;
+width: 500px;
+border: solid 1px rgb(232,228,226);
+padding:0px 134px;
+}
+
+h1, h5{
+text-align:center;
+}
+
+fieldset{
+width: 400px;
+border: solid 1px rgb(232,228,226);
+padding:0px 50px;
+}
+
+legend{
+font-weight: bold;
+}
+
+.a{
+width:250px;
+position: absolute;
+right: 194px;
+border:solid 1px rgb(232,228,226);
+}
+
+
+.c{
+position:absolute;
+left:250px;
+border: solid 1px rgb(232,228,226);
+}
+
+a{
+text-decoration:none;
+color: rgb(102,164,229);
+}
+
+input[type="button"]{
+color: rgb(102,164,229);
+}
+
+input[type="submit"], input[type="reset"]{
+color: rgb(102,164,229);
+}
+
+
+input[type="button"]:hover{
+border: solid 1px black;
+}
+
+input[type="button"]:focus{
+outline:ridge 2px black;
+}
+
+footer{
+position: absolute;
+top: 924px;
+height: 100px;
+width: 768px;
+border: solid 1px rgb(232,228,226);
+border-top: none;
+}

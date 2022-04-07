@@ -1,0 +1,126 @@
+body{
+height:1024px;
+font-family:"trebuchet MS",georgia,impact,"sans-serif" !important;
+background-color: rgb(255,255,255) !important;
+}
+
+header{
+border: solid 1px rgb(232,228,226);
+margin: 0px 200px;
+height:150px;
+width:950px;
+border-bottom: none;
+background-image:url("images/11.png");
+background-repeat: no-repeat;
+  
+   -webkit-animation-name: design;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 30s;
+    -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+    animation-name: design;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running; 
+}
+
+@-webkit-keyframes design {
+    0%{background-image:url("images/7.png");}
+    50%{background-image:url("images/2.png");}
+}/*
+
+@keyframes design {
+    0%{background-image:url("images/4.png");}
+    50%{background-image:url("images/5.png");}
+} */
+
+nav{
+position: absolute important;
+top: 100px;
+height:50px;
+border: none !important;
+border-radius: 0px !important;
+-webkit-appearance: none;
+background-color:rgb(232,228,226) !important;
+}
+
+.navbar-brand{
+color:rgb(102,164,229) !important;
+}
+
+h1{
+font-weight: bold !important;
+text-align:center;
+}
+
+
+form{
+position:absolute;
+left:480px;
+width:450px;
+}
+
+
+section{
+position:absolute;
+top:150px;
+margin: 0px 200px;
+border: solid 1px rgb(232,228,226);
+height: 800px;
+width:950px;
+border-bottom: none;
+}
+
+
+.glyphicon-trash{
+color:#FF0000;
+}
+
+.glyphicon-edit{
+color:#FF8C00;
+}
+
+
+div.pager {
+    text-align: center;
+    margin: 1em 0;
+}
+
+div.pager span {
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8;
+    text-align: center;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    margin-right: 0.5em;
+}
+
+div.pager span.active {
+    background: rgb(51, 122, 183);
+}
+
+.manage{
+background-color: rgb(232,228,226) !important;
+
+}
+
+footer{
+position:absolute;
+top:950px;
+margin: 0px 200px;
+text-align:center;
+border: solid 1px rgb(232,228,226);
+height: 74px;
+width:950px;
+
+
+}

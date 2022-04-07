@@ -1,0 +1,218 @@
+body{
+height:auto;
+width: 768px;
+margin: 0px 298px;
+font-family:"trebuchet MS",georgia,impact,"sans-serif";
+}
+
+header{
+height: 150px;
+width: 768px;
+border: solid 1px rgb(232,228,226);
+border-bottom: none;
+background-image:url("images/5.png");
+background-repeat: no-repeat;
+
+    -webkit-animation-name: design;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+    animation-name: design;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes design {
+    0%{background-image:url("images/5.png");}
+    100%{background-image:url("images/4.png");}
+}
+
+@keyframes design {
+    0%{background-image:url("images/5.png");}
+    100%{background-image:url("images/4.png");}
+}
+
+nav ul{
+list-style-type:none;
+}
+nav li{
+display:inline;
+}
+
+nav{
+width:768px;
+height:25px;
+position:absolute;
+top:125px;
+background-color:rgb(232,228,226);
+font-weight: bold;
+}
+
+.nav{
+position:absolute;
+top:0px;
+height:25px;
+}
+
+.bk{
+position:absolute;
+left:127px;
+width:130px;
+top:3px;
+color: rgb(102,164,229);
+}
+
+.lg{
+position:absolute;
+right:167px;
+width:50px;
+top:3px;
+color: rgb(102,164,229);
+}
+
+
+section{
+position: absolute;
+top: 150px;
+height:824px;
+width: 768px;
+border: solid 1px rgb(232,228,226);
+/*padding:0px 34px;*/
+}
+
+h1, h5, h2{
+text-align:center;
+}
+
+.top{
+position:absolute;
+top:60px;
+left:100px;
+}
+
+.over{
+position:absolute;
+top:0px;
+
+}
+.element1{
+position:absolute;
+top:0px;
+left: 120px;
+}
+
+.element2{
+position:absolute;
+top:17px;
+left: 120px;
+}
+
+.element3{
+position:absolute;
+top:38px;
+left:119px;
+}
+
+.element4{
+position:absolute;
+top:57px;
+left: 119px;
+}
+
+.lo{
+position:absolute;
+right:130px;
+border: solid 1px rgb(220,50,46);
+}
+
+.lo:hover{
+outline:ridge 2px rgb(239,27,27);
+}
+
+.s{
+width:100px;
+border:solid 1px rgb(232,228,226);
+}
+
+.e{
+width:200px;
+border:solid 1px rgb(232,228,226);
+}
+
+.f{
+border:solid 1px rgb(232,228,226);
+}
+
+.filter{
+position:absolute;
+top:170px;
+left:140px;
+width:560px;
+}
+
+.tab{
+border:solid 1px rgb(232,228,226);
+position:absolute;
+width:560px;
+height:570px;
+left:100px;
+top:250px;
+overflow:auto;
+}
+
+.n,a{
+text-decoration:none;
+color: rgb(102,164,229);
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+
+table{
+border-collapse:collapse;
+}
+
+td, th{
+border: 1px solid black;
+width: 200px;
+height:30px;
+text-align:center;
+}
+
+input, select{
+text-align: center;
+font-family:"trebuchet MS",georgia,impact,"sans-serif";
+}
+
+input[type="submit"], input[type="reset"]{
+color: rgb(102,164,229);
+}
+
+input[type="submit"]:hover, input[type="number"]:hover, input[type="text"]:hover, input[type="reset"]:hover
+{
+border: solid 1px black;
+}
+
+
+input:focus{
+outline:ridge 2px black;
+}
+
+footer{
+position: absolute;
+top: 974px;
+height: 50px;
+width: 768px;
+border: solid 1px rgb(232,228,226);
+border-top: none;
+}
